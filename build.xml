@@ -1,0 +1,20 @@
+<project name="asmprinter" default="compile">
+
+ <target name="compile">
+   <javac srcdir="." includeantruntime="false" debug="true" classpath="/home/jcook/tools/lib/asm-9.2.jar:."/>
+ </target>
+ 
+  <target name="run" depends="compile">
+   <java classname="ClassInstrumentor" fork="true" classpath="/home/jcook/tools/lib/asm-9.2.jar:.">
+     <arg value="ClassInstrumentor"/>
+   </java>
+ </target>
+
+ <target name="clean">
+   <delete>
+     <fileset dir="." includes="*.class"/>
+   </delete>
+ </target>
+
+</project>
+

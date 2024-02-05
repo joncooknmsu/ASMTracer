@@ -1,0 +1,13 @@
+
+# to compile:
+
+javac -cp /home/jcook/tools/lib/asm-9.2.jar:. ClassPrinter.java 
+
+# to run:
+
+java -cp /home/jcook/tools/lib/asm-9.2.jar:. ClassPrinter
+
+# or:
+
+java -cp /home/jcook/tools/lib/asm-9.2.jar:. ClassPrinter ClassPrinter
+
